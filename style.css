@@ -1,0 +1,326 @@
+body {
+    background: #2069a5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes spin {
+    from 
+    {
+      transform: rotate(0deg);
+    }
+    to 
+    {
+      transform: rotate(360deg);
+    }
+}
+
+/* Vinyl */
+.disc-table {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 70px;
+    height: 300px;
+    width: 450px;
+    background-color: #b3b1b1;
+    border-radius: 30px;
+    border: 2px solid;
+}
+
+.socle-disc {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #aa9f9f;
+    border: 5px solid #aa9f9f;
+}
+
+.disc {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.center-disc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #FFF;
+    z-index: 2;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid;
+    z-index: 3;
+}
+
+.point {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000; 
+}
+
+.reflection-left, .reflection-right {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #36495d;
+}
+  
+.reflection-left {
+    clip-path: polygon(50% 50%, 0 75%, 10% 100%);
+}
+
+.reflection-right {
+    clip-path: polygon(90% 0, 50% 50%, 100% 25%);
+}
+
+.volume-bar {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    height: 150px;
+    width: 30px;
+    background-color: #606462;
+    border-radius: 10px;
+}
+
+.volume-slot {
+    height: 100%;
+    width: 7px;
+    background-color: #000;
+    margin: auto;
+}
+
+.volume-button {
+    width: 87%;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgb(39, 37, 37);
+    position: absolute;
+    top: 40px;
+    left: 2px;
+}
+
+.button {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.start-button {
+    background-color: #606462;
+    right: 120px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+.first-button {
+    background-color: rgb(211, 169, 30);
+    right: 50px;
+    bottom: 30px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
+}
+
+.second-button {
+    background-color: rgb(221, 59, 47);
+    right: 80px;
+    bottom: 30px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
+}
+
+.block {
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    right: 130px;
+    height: 40px;
+    width: 30px;
+    background-color: rgb(136, 132, 132);
+    transform: rotate(30deg);
+}
+
+.stem {
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    right: 108px;
+    height: 10px;
+    width: 150px;
+    background-color: rgb(136, 132, 132);
+    transform: rotate(-60deg);
+    z-index: 2;
+}
+
+.mouthpiece {
+    border-radius: 5px;
+    position: absolute;
+    top: 160px;
+    right: 205px;
+    height: 20px;
+    width: 30px;
+    background-color: rgb(136, 132, 132);
+    transform: rotate(-60deg);
+    z-index: 3;
+}
+
+.spin {
+    animation: spin 4s linear infinite;
+}
+
+/* Library */
+.library {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 420px;
+    border: 5px solid white;
+    background-image: radial-gradient(rgb(165, 72, 18), rgb(124, 41, 2));
+    border-radius: 10px;
+}
+
+.artist {
+    margin-top: 20px;
+}
+
+.song {
+    margin-top: 30px;
+}
+
+.text {
+    font-size: 0.6em;
+    text-align: center;
+    color: rgb(197, 31, 45);
+}
+
+.first-line, .second-line {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.disc-section {
+    height: 140px;
+    width: 180px;
+}
+
+.disc-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.middle-disc {
+    height: 35px;
+    width: 35px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.small-point {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000; 
+}
+
+.song-title {
+    text-align: center;
+    color: #FFF;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+/* Colors */
+.orange {
+    background-color: orange;
+}
+
+.red {
+    background-color: rgb(189, 115, 65);
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: rgb(29, 71, 160);
+}
