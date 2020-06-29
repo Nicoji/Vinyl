@@ -86,7 +86,7 @@ button {
     border-radius: 50%;
     background-color: transparent;
     border: 3px solid;
-    z-index: 3;
+    z-index: 1;
 }
 
 .point {
